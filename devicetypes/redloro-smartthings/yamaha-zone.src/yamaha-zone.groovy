@@ -13,7 +13,7 @@
  *  for the specific language governing permissions and limitations under the License.
  */
 metadata {
-  definition (name: "Yamaha Zone", namespace: "redloro-smartthings", author: "redloro@gmail.com") {
+  definition (name: "Yamaha Zone", namespace: "kapurs", author: "redloro@gmail.com") {
 
     /**
      * List our capabilties. Doing so adds predefined command(s) which
