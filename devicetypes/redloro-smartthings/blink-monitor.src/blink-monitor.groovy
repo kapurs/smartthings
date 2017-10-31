@@ -13,7 +13,7 @@
  *  for the specific language governing permissions and limitations under the License.
  */
 metadata {
-  definition (name: "Blink Monitor", namespace: "redloro-smartthings", author: "redloro@gmail.com") {
+  definition (name: "Blink Monitor", namespace: "kapurs", author: "redloro@gmail.com") {
     capability "Switch"
     capability "Refresh"
     capability "Polling"
