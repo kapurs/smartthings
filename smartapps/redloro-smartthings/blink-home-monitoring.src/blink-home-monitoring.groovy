@@ -18,7 +18,7 @@
  */
 definition(
   name: "Blink Home Monitoring",
-  namespace: "redloro-smartthings",
+  namespace: "kapurs",
   author: "redloro@gmail.com",
   description: "Blink SmartApp",
   category: "My Apps",
@@ -47,7 +47,7 @@ def installed() {
   // add blink device
   def deviceId = 'blink|network'+getNetworks(getAuthToken())[0].id
   if (!getChildDevice(deviceId)) {
-    addChildDevice("redloro-smartthings", "Blink Monitor", deviceId, hostHub.id, ["name": "Blink Monitor", label: "Blink Monitor", completedSetup: true])
+    addChildDevice("kapurs", "Blink Monitor", deviceId, hostHub.id, ["name": "Blink Monitor", label: "Blink Monitor", completedSetup: true])
   }
 }
 
