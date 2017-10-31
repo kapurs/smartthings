@@ -19,7 +19,7 @@ import groovy.util.XmlSlurper
 
 definition(
   name: "Yamaha Receiver",
-  namespace: "redloro-smartthings",
+  namespace: "kapurs",
   author: "redloro@gmail.com",
   description: "Yamaha SmartApp",
   category: "My Apps",
@@ -96,7 +96,7 @@ private addChildDevices() {
   settings.receiverZones.each {
     def deviceId = getDeviceId(it)
     if (!getChildDevice(deviceId)) {
-      addChildDevice("redloro-smartthings", "Yamaha Zone", deviceId, hostHub.id, ["name": it, label: "${settings.receiverName}: ${it}", completedSetup: true])
+      addChildDevice("kapurs", "Yamaha Zone", deviceId, hostHub.id, ["name": it, label: "${settings.receiverName}: ${it}", completedSetup: true])
       log.debug "Added Yamaha zone: ${deviceId}"
     }
   }
